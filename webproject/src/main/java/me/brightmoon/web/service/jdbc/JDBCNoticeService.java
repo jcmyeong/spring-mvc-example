@@ -12,10 +12,12 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import me.brightmoon.web.entity.Notice;
 import me.brightmoon.web.service.NoticeService;
 
+@Service	// @Controller, @Service, @Repository
 public class JDBCNoticeService implements NoticeService {
 //	private String url = "jdbc:mysql://localhost:3306/newlec?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT";
 //	private String uid = "newlec";
