@@ -11,6 +11,8 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import me.brightmoon.web.entity.Notice;
 import me.brightmoon.web.service.NoticeService;
 
@@ -21,11 +23,8 @@ public class JDBCNoticeService implements NoticeService {
 //	private String driver = "com.mysql.cj.jdbc.Driver";
 	
 	/** DataSource 를 이용하여 DB Connection 을 사용한다 */
+	@Autowired
 	private DataSource dataSource;
-	
-	public void setDataSource(DataSource dataSource) {
-		this.dataSource = dataSource;
-	}
 
 	public List<Notice> getList(int page, String field, String query) throws ClassNotFoundException, SQLException{
 		
