@@ -15,9 +15,9 @@ public class NoticeController {	// <bean name="adminNoticeController" class="me.
 	
 	@RequestMapping("reg")
 	@ResponseBody
-	public String reg() {
+	public String reg(String title, String content) {
 		
-		return "reg";
+		return String.format("title:%s<br>content:%s<br>", title, content);
 	}
 	
 	@RequestMapping("edit")
