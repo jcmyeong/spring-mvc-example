@@ -12,12 +12,6 @@
        
     <!-- <context:annotation-config /> -->
     <context:component-scan base-package="me.brightmoon.web.controller" />
-    
-	<!-- <bean id="/index" class="me.brightmoon.web.controller.IndexController" /> -->
-   	<bean id="/notice/list" class="me.brightmoon.web.controller.notice.ListController">
-   		<!-- <property name="noticeService" ref="noticeService" /> -->
-   	</bean>
-   	<bean id="/notice/detail" class="me.brightmoon.web.controller.notice.DetailController" />
    	
    	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 		<property name="viewClass"
